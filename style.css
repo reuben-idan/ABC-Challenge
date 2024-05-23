@@ -1,22 +1,26 @@
+/* Reset any default browser styles */
+body,
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    background-color: gray;
-  }
+/* Set background color for the entire page */
+body {
+  background-color: gray;
+}
 
-  h3 {
-    color: green;
-  }
+/* Set green color for all h3 elements */
+h3 {
+  color: green;
+}
 
-  body > main > div:nth-child(3) > div.col > h3 {
-    color: blue;
-  }
+/* Make a class to style specific h3 elements */
+.special-h3 {
+  color: blue;
+}
 
-  h3#special {
-    color: red;
-  }
-  
+/* Target a specific h3 element by ID */
+#special {
+  color: red;
+}

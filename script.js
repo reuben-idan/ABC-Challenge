@@ -1,18 +1,25 @@
-function generateRandomColors() {
-    const colors = ['green', 'blue', 'red'];
-    const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
-    const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
-    const randomColor3 = colors[Math.floor(Math.random() * colors.length)];
-    return [randomColor1, randomColor2, randomColor3];
-  }
+// Function to generate a random color
+function getRandomColor() {
+  const colors = ['green', 'blue', 'red'];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
 
-  const h5Elements = document.querySelectorAll('h5');
+// Function to apply random colors to an element
+function applyRandomColors(element) {
+  const color1 = getRandomColor();
+  const color2 = getRandomColor();
+  const color3 = getRandomColor();
 
+  element.style.color = color1;
+  element.style.listStyleColor = color2; // Change list style color
+  element.style.borderColor = color3; // Add a border with random color
+}
+
+// Add event listener to all h5 elements
+const h5Elements = document.querySelectorAll('h5');
 h5Elements.forEach(h5 => {
-  h5.addEventListener('click', function() {
-    const colors = generateRandomColors();
-    this.style.color = colors[0]; // Set first random color
-    this.style.backgroundColor = colors[1]; // Set second random color
-    this.style.border = `2px solid ${colors[2]}`; // Set border with third random color
+  h5.addEventListener('click', () => {
+    applyRandomColors(h5);
   });
 });
