@@ -125,7 +125,7 @@ You are free to use, modify, and distribute it as per the license terms.
 ## 📬 Contact
 
 - **GitHub**: [reuben-idan](https://github.com/reuben-idan)  
-- **Email**: *your-email@example.com*  
+- **Email**: *reuben.idan@gmail.com*  
 - Feel free to open an issue or suggest features in the [Issues](https://github.com/reuben-idan/ABC-Challenge/issues) section.
 ```
 
